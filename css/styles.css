@@ -1,0 +1,317 @@
+/*
+	Author:Afrah Said
+	Theme:Restaurant Food Order
+	Version:1.0
+
+/*CSS for all */
+*{
+	margin: 0 0;
+	padding: 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+	width:80%; 
+	margin: 0 auto;
+	padding: 1%;
+
+}
+.img-responsive{
+	width: 100%;
+}
+.img-curve{
+	border-radius: 15px;
+}
+.text-right{
+	text-align: right;
+}
+.text-center{
+		text-align: center;
+}
+.text-white{
+	color: white;
+}
+.clearfix{
+	clear: both;
+	float: none;
+}
+a{
+	color: black;
+	text-decoration: none;
+	transition: 0.5s;
+	font-family: "Big Caslon";
+}
+.menu a:hover{
+	color:#ff4781;
+}
+.btn{
+	padding: 1%;
+	border: none;
+	font-size: 1rem;
+	border-radius: 5px;
+}
+.btn:hover{
+	color: black;
+}
+.btn-primary{
+	background-color: #ff4781;
+	color: white;
+	cursor: pointer;
+	padding: 10px 20px ;
+}
+.float-container{
+	position: relative;
+}
+.float-text{
+	position: absolute;
+	bottom: 30px;
+	left: 40%;
+}
+.text-italic{
+	font-style: italic;
+}
+.color-pink{
+	color:#ff4781;
+}
+.hover-pink:hover{
+	background-color: pink;
+}
+/*CSS for navBar section*/
+.logo{
+	width: 10%;
+	float: left;
+}
+.menu{
+	margin-top: 2%;
+	line-height: 60px;
+}
+.menu ul{
+	list-style-type: none;
+}
+.menu ul li{
+	display: inline;
+	padding: 1%;
+	font-size: 20px;
+	margin: 0 20px;
+	font-weight: bold;
+}
+/* CSS for Food search section*/
+.food-search{
+	background-image: url(../images//bg.jpg);
+	padding: 7% 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.food-search input[type="search"]{
+	width: 70%;
+	margin-left: 10%;
+	padding: 1% 2%;
+	font-size: 1rem;
+	border: none;
+	border-radius: 5px; 
+}
+/* Categories section*/
+h2{
+	text-align: center;
+	margin-bottom: 2%;
+	font-size: 2rem;
+	font-family: "Big Caslon";
+}
+h3{
+	font-size: 1.5rem;
+	font-family: "Big Caslon";
+}
+.box-3 {
+	float: left;
+	width: 28%;
+	margin: 2%;
+} 
+ /*-- Food section starts here--*/
+#food-category{
+	padding: 50px 0;
+}
+.category-list{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+	grid-gap: 40px;
+	margin-top: 50px;
+}
+.category{
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden; 
+
+}
+.category img{
+	width: 100%; 
+	border-radius: 10px;
+	display: block;
+	transition: 0.5s;
+
+}
+.layer{
+	width: 100%;
+	height: 0%;
+	background: linear-gradient(rgb(0, 0,0, 0.001),pink); 
+	border-radius: 10px;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	padding: 0 0;
+	justify-content: center;
+	text-align: center;
+	font-size: 15px;
+	align-items: center;
+	transition: 0.5s;
+}
+.layer h3 {
+	font-size: 35px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	color: black;
+	font-family: "Big Caslon";
+}
+.layer p{
+	font-size: 25px;
+	color: black;
+	text-align: left;
+	font-family: "Big Caslon";
+}
+
+.layer a{
+	margin-top: 20px;
+	font-size: 20px;
+	padding: 10px;
+	border-radius:5% ;
+	color: black;
+	background:  #eb0518;
+	transition: 0.5s;
+}
+.category:hover img{
+	transform: scale(1.1); 
+}
+.category:hover .layer{
+	height: 100%;
+}
+/*-- Food category section ends here--*/
+/* CSS for Food Menu */
+.food-menu{
+	background-color: #ececec;
+	padding: 4% 0;
+}
+.explore-food{
+	margin-top: 0;
+	margin-bottom: 4%;
+}
+.food-menu-box{
+	/*border:1px solid black;*/
+	width: 43%;
+	margin: 1%;
+	padding: 2%;
+	float: left;
+	background-color: white;
+	border-radius: 5px;
+	}
+.food-menu-img{
+	width: 22%;
+	float: left;
+}
+.food-menu-desc{
+	width: 70%;
+	float: left;
+	margin-left: 8%;
+	font-family: "Big Caslon";
+}
+.food-price{
+
+	font-size: 1.2rem;
+	margin: 2% 0;
+}
+.food-detail{
+	font-size: 1rem;
+	color: blue;
+}
+.food-menu-desc span{
+	text-decoration: line-through;
+	text-decoration-color: red;
+	font-size: 14px;
+}
+.food-menu-desc p{
+	font-weight: 500;
+	font-family: "Big Caslon";
+}
+/*CSS for social */
+.social ul{
+	list-style-type: none;
+}
+.social ul li{
+	display: inline;
+	padding: 1%;
+}
+/*CSS for mobile size or smaller screen devices*/
+@media only screen and (max-width:1060px){
+	.logo{
+		width: 80%;
+		float: none;
+		margin: 1% auto;
+	}
+	.menu ul{
+		text-align: center;
+	}
+	.menu ul li{
+		margin: 0 3px;
+	}
+	.food-search input[type="search"]{
+		width: 50%;
+		padding: 1%;
+		font-size: 20px;
+		margin-bottom: 3%;
+
+	}
+	.btn{
+		width: 15%;
+		padding: 2%;
+		
+	}
+	.food-search{
+		padding: 10% 0;
+	}
+	.ctegories{
+		padding: 10% 0;
+	}
+	.h2{
+
+		margin:6%;
+	}
+	.box-3{
+		width: 90%;
+		margin: 4% auto;
+	}
+	.food-menu{
+		padding: 20% 0;
+	}
+	.food-menu-box{
+		width: 90%;
+		padding: 5% ;
+		margin: 5% 0;
+	}
+	.social{
+		padding: 5%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
